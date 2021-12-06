@@ -7,6 +7,7 @@ import { LibraryComponent } from './library/library.component';
 import { ShopComponent } from './shop/shop.component';
 import { AccountComponent } from './account/account.component';
 import { GenrepickComponent } from './genrepick/genrepick.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'library', component: LibraryComponent},
   {path: 'shop', component: ShopComponent},
   {path: 'account', component: AccountComponent},
-  {path: 'genrepick', component: GenrepickComponent}
+  {path: 'genrepick', component: GenrepickComponent},
+  {path: 'profile', component:ProfileComponent}
 ];
 
 

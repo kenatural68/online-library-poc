@@ -12,6 +12,7 @@ import { SigninComponent } from './signin/signin.component';
 import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
 import { GenrepickComponent } from './genrepick/genrepick.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GenrepickComponent } from './genrepick/genrepick.component';
     SigninComponent,
     LoginComponent,
     AccountComponent,
-    GenrepickComponent
+    GenrepickComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
