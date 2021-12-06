@@ -1,0 +1,15 @@
+<div class="container">
+<form>
+  <h1 class="display-4">Login to your account</h1>
+    <div class="form-group">
+      <label for="exampleInputEmail1">E-mail address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary" [routerLink]="['/library']">Login</button>
+  </form>
+</div>
