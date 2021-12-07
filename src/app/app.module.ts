@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
 import { GenrepickComponent } from './genrepick/genrepick.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     AccountComponent,
     GenrepickComponent,
-    ProfileComponent
+    ProfileComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
