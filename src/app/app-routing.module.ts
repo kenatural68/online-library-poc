@@ -9,6 +9,7 @@ import { AccountComponent } from './account/account.component';
 import { GenrepickComponent } from './genrepick/genrepick.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminComponent } from './admin/admin.component';
+import { AddbooksComponent } from './addbooks/addbooks.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'account', component: AccountComponent},
   {path: 'genrepick', component: GenrepickComponent},
   {path: 'profile', component:ProfileComponent},
-  {path: 'admin', component: AdminComponent}
+  {path: 'admin', component: AdminComponent},
+  {path: 'addbooks', component: AddbooksComponent}
 ];
 
 

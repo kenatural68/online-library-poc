@@ -14,6 +14,7 @@ import { AccountComponent } from './account/account.component';
 import { GenrepickComponent } from './genrepick/genrepick.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminComponent } from './admin/admin.component';
+import { AddbooksComponent } from './addbooks/addbooks.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdminComponent } from './admin/admin.component';
     AccountComponent,
     GenrepickComponent,
     ProfileComponent,
-    AdminComponent
+    AdminComponent,
+    AddbooksComponent
   ],
   imports: [
     BrowserModule,
