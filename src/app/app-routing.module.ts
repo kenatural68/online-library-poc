@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { SigninComponent } from './signin/signin.component';
-import { HomeComponent } from './home/home.component';
-import { LibraryComponent } from './library/library.component';
-import { ShopComponent } from './shop/shop.component';
-import { AccountComponent } from './account/account.component';
-import { GenrepickComponent } from './genrepick/genrepick.component';
-import { ProfileComponent } from './profile/profile.component';
-import { AdminComponent } from './admin/admin.component';
-import { AddbooksComponent } from './addbooks/addbooks.component';
+import { LoginComponent } from './components/login/login.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { HomeComponent } from './components/home/home.component';
+import { LibraryComponent } from './components/library/library.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { AccountComponent } from './components/account/account.component';
+import { GenrepickComponent } from './components/genrepick/genrepick.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AddbooksComponent } from './components/addbooks/addbooks.component';
+import { BookinfoComponent } from './components/bookinfo/bookinfo.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'genrepick', component: GenrepickComponent},
   {path: 'profile', component:ProfileComponent},
   {path: 'admin', component: AdminComponent},
-  {path: 'addbooks', component: AddbooksComponent}
+  {path: 'addbooks', component: AddbooksComponent},
+  {path: 'bookinfo', component: BookinfoComponent}
 ];
 
 

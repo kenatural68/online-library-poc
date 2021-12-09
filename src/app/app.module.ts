@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LibraryComponent } from './library/library.component';
-import { ShopComponent } from './shop/shop.component';
+import { HomeComponent } from './components/home/home.component';
+import { LibraryComponent } from './components/library/library.component';
+import { ShopComponent } from './components/shop/shop.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SigninComponent } from './signin/signin.component';
-import { LoginComponent } from './login/login.component';
-import { AccountComponent } from './account/account.component';
-import { GenrepickComponent } from './genrepick/genrepick.component';
-import { ProfileComponent } from './profile/profile.component';
-import { AdminComponent } from './admin/admin.component';
-import { AddbooksComponent } from './addbooks/addbooks.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { LoginComponent } from './components/login/login.component';
+import { AccountComponent } from './components/account/account.component';
+import { GenrepickComponent } from './components/genrepick/genrepick.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AddbooksComponent } from './components/addbooks/addbooks.component';
+import { BookinfoComponent } from './components/bookinfo/bookinfo.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { AddbooksComponent } from './addbooks/addbooks.component';
     GenrepickComponent,
     ProfileComponent,
     AdminComponent,
-    AddbooksComponent
+    AddbooksComponent,
+    BookinfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

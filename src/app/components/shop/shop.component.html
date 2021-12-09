@@ -25,7 +25,7 @@
         <p class="card-text">The Old Man and the Sea, short heroic novel by Ernest Hemingway, 
           published in 1952 and awarded the 1953 Pulitzer Prize for fiction. 
           It was his last major work of fiction. The story centres on an aging fisherman who engages in an epic battle to catch a giant marlin.</p>
-        <p><button type="button" class="btn btn-outline-primary btn-sm">Read</button></p>
+        <p><button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/bookinfo']">Read</button></p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Literary Fiction</small>
@@ -40,6 +40,7 @@
           and has since followed generations of Yelnats. Now Stanley has been unjustly sent to a boys’ detention center, 
           Camp Green Lake, where the boys build character by spending all day, every day digging holes exactly 
           five feet wide and five feet deep. There is no lake at Camp Green Lake. But there are an awful lot of holes.</p>
+          <p><button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/bookinfo']">Read</button></p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -53,10 +54,8 @@
         <p class="card-text">Readers beware. The brilliant, breathtaking conclusion to J.K. Rowling's spellbinding series is not for the faint of heart
           --such revelations, battles, and betrayals await in Harry Potter and the Deathly Hallows that no fan will make it to the end 
           unscathed. Luckily, Rowling has prepped loyal readers for the end of her series by doling out increasingly dark and dangerous 
-          tales of magic and mystery, shot through with lessons about honor and contempt, love and loss, and right and wrong. Fear not, 
-          you will find no spoilers in our review--to tell the plot would ruin the journey, and Harry Potter and the Deathly Hallows is an 
-          odyssey the likes of which Rowling's fans have not yet seen, and are not likely to forget. But we would be remiss if we did not 
-          offer one small suggestion before you embark on your final adventure with Harry--bring plenty of tissues.</p>
+          tales of magic and mystery, shot through with lessons about honor and contempt, love and loss, and right and wrong. </p>
+          <p><button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/bookinfo']">Read</button></p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -74,6 +73,7 @@
           <br><br>
           It’s a small city, a place as hauntingly familiar as your own hometown. 
           Only in Derry the haunting is real ...</p>
+          <p><button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/bookinfo']">Read</button></p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -100,4 +100,39 @@
       </div>
     </div>
   </div>
+</div>
+
+<div style="height: 90px;"></div>
+
+<div class="container">
+  <h2 class="display-3 font-weight-normal"> Take your weekly reading up a notch </h2>
+  <p>Why not spice up your library by choosing different genres for next week?</p>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="action" aria-label="...">
+      Action
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="adventure" aria-label="...">
+      Adventure
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="biography" aria-label="...">
+      Biography
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="fantasyfiction" aria-label="...">
+      Fantasy Fiction
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="horror" aria-label="...">
+      Horror
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="scifi" aria-label="...">
+      Sci-Fi
+    </li>
+  </ul>
+  <br>
+  <a class="btn btn-primary btn-lg" role="button">Submit</a>
 </div>

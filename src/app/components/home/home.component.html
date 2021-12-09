@@ -1,11 +1,18 @@
 <div>
     <img src="https://wallpaperaccess.com/full/124383.jpg" width=100% height="auto">
     <div class="centered">
+      <div style="height: 80px;"></div>
       <h1 class="display-4">Hello, bookworm!</h1>
       <p class="lead">Welcome to The Book Spot where you can explore wonderful books to read!</p>
       <hr class="my-4">
       <p>Explore now.</p>
-      <br><br>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" [routerLink]="['/login']" role="button">Log In</a>
+      </p>
+      <hr>
+      <p>Don't have an account?</p>
+      <p> <a [routerLink]="['/signin']">Sign up</a> </p>
+      <hr>
       <blockquote class="blockquote text-center">
         <p class="mb-0">"Many people, myself among them, feel better at the mere sight of a book."</p>
         <footer class="blockquote-footer">Jane Smiley <cite title="Source Title">Thirteen Ways of Looking at a Novel</cite></footer>

@@ -2,7 +2,7 @@
   <h1 class="display-2">Pick a Genre</h1>
 <div class="card-deck">
     <div class="card">
-      <img class="card-img-top" src="https://blog-cdn.reedsy.com/uploads/2019/02/engagement-1718244_1280.jpg" alt="Romance">
+      <img class="card-img-top" src="https://media.wired.com/photos/5fd4153cabc24802fd286136/master/pass/culture0fantasy-books-2020.jpgg" alt="Fantasy Fiction">
       <div class="card-body">
         <h5 class="card-title">Fantasy Fiction</h5>
         <p class="card-text">Fantasy literature is literature set in an imaginary universe, often but not always without any 
@@ -10,7 +10,10 @@
           of these imaginary worlds. Fantasy literature may be directed at both children and adults.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+          <input class="form-check-input" type="checkbox" value="fantasy fiction" id="fantasyfiction">
+          <label class="form-check-label" for="fantasyfiction">
+            Select
+          </label>
       </div>
     </div>
     <div class="card">
@@ -24,8 +27,11 @@
              novels and sets them into their own niche. </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+        <input class="form-check-input" type="checkbox" value="adventure" id="adventure">
+        <label class="form-check-label" for="adventure">
+          Select
+        </label>
+    </div>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://cdn.britannica.com/09/92009-050-122EC720/Enterprise-from-Star-Trek-III-The-Search.jpg" alt="Sci-Fi">
@@ -37,8 +43,11 @@
             </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+        <input class="form-check-input" type="checkbox" value="sci-fi" id="sci-fi">
+        <label class="form-check-label" for="sci-fi">
+          Select
+        </label>
+    </div>
     </div>
   </div>
   <br>
@@ -55,8 +64,11 @@
           often shocks and provokes with its exploration of the unknown.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+        <input class="form-check-input" type="checkbox" value="horror" id="horror">
+        <label class="form-check-label" for="horror">
+          Select
+        </label>
+    </div>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://www.cine2dvdtransfers.co.uk/blog/wp-content/uploads/2019/06/Action-1024x593.jpg" alt="Action">
@@ -67,8 +79,11 @@
           Generally heroes are seen as larger than life, and many times they are prime examples of the epic hero archetype.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+        <input class="form-check-input" type="checkbox" value="action" id="action">
+        <label class="form-check-label" for="action">
+          Select
+        </label>
+    </div>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/c9c0bea9-446a-4649-a069-dd0ad11f526f/fx1_lrg.jpg" alt="Biography">
@@ -79,8 +94,21 @@
             </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+        <input class="form-check-input" type="checkbox" value="biography" id="biography">
+        <label class="form-check-label" for="biography">
+          Select
+        </label>
     </div>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" [routerLink]="['/shop']" role="button">Let's Go</a>
+    </p>
+    <p class="random">
+      <input class="form-check-input" type="checkbox" value="random" id="random">
+      <label class="form-check-label" for="random">Randomize for me</label>
+    </p>
   </div>
 </div>
