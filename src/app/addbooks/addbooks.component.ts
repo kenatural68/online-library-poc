@@ -12,4 +12,8 @@ export class AddbooksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(){
+    alert("Added book successfully")
+  }
+
 }

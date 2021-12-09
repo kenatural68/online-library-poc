@@ -1,8 +1,33 @@
 <div class="container">
     <form>
         <div class="form-group">
-          <label for="uploadpic">Upload Front Page</label>
-          <input type="file" class="form-control-file" id="uploadpic">
+          <label for="uploadPic">Upload Front Cover</label>
+          <input type="file" class="form-control-file" id="uploadPic">
         </div>
+        <div class="form-group">
+            <label for="uploadPdf">Upload PDF</label>
+            <input type="file" class="form-control-file" id="uploadPdf">
+          </div>
+        <div class="form-group">
+          <label for="titleBook">Title</label>
+          <input type="text" class="form-control" id="titleBook" placeholder="Book title">
+        </div>
+        <div class="form-group">
+          <label for="authorBook">Author</label>
+          <input type="text" class="form-control" id="authorBook" placeholder="Author">
+        </div>
+        <label for="genre">Genre</label>
+        <select class="form-control">
+            <option>--select--</option>
+            <option>Adventure</option>
+            <option>Action</option>
+            <option>Biography</option>
+            <option>Horror</option>
+            <option>Romance</option>
+            <option>Sci-Fi</option>
+          </select>
       </form>
+      <a role="button" class="btn btn-primary" [routerLink]="['/admin']" (click)="onClick()">
+        Add Book
+    </a>
 </div>
