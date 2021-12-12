@@ -1,18 +1,19 @@
 <div class="container">
-<form>
+<form #Registerform="ngForm" (ngSubmit)="registerUser()">
   <h1 class="display-4">Create an account</h1>
     <div class="form-row">
-      <div class="col-md-4 mb-3">
+      <!-- <div class="col-md-4 mb-3">
         <label for="firstname">First name</label>
         <input type="text" class="form-control" id="firstname" placeholder="First name" required>
       </div>
       <div class="col-md-4 mb-3">
         <label for="lastname">Last name</label>
         <input type="text" class="form-control" id="lastname" placeholder="Last name" required>
-      </div>
+      </div> -->
       <div class="col-md-4 mb-3">
         <label for="email">E-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+        <input type="email" class="form-control"  placeholder="E-mail" name="email" [(ngModel)]="user.email" required #email="ngModel"
+        [class.is-invalid]="email.invalid && email.touched ">
       </div>
       <div class="col-md-4 mb-3">
         <label for="username">Username</label>
@@ -20,18 +21,25 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="username">@</span>
           </div>
-          <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+          <input type="text" class="form-control"  placeholder="Username" aria-describedby="inputGroupPrepend2" name="username" [(ngModel)]="user.username" required #username="ngModel"
+          [class.is-invalid]="username.invalid && username.touched ">
         </div>
       </div>
     </div>
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Password" required>
+        <input type="password" class="form-control"  placeholder="Password" name="password" [(ngModel)]="user.password" required
+        #password="ngModel"
+        [class.is-invalid]="password.invalid && password.touched ">
+        <small class="text-danger" [class.d-none]="password.valid || password.untouched">password field is required</small>
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationpassword">Re-Enter Password</label>
-        <input type="password" class="form-control" id="validationpassword" placeholder="Re-enter Password" required>
+        <input type="password" class="form-control" placeholder="Re-enter Password" name="cpassword" (ngModel)="user.password"  required
+        #cpassword="ngModel" [class.is-invalid]="cpassword.invalid && cpassword.touched ">
+        
+        <small class="text-danger" [class.d-none]="(cpassword.value == password.value|| cpassword.untouched)">password must be matched</small>
       </div>
     </div>
     <div class="form-group">
@@ -54,6 +62,7 @@
         <a href="https://www.youtube.com/watch?v=cvh0nX08nRw">View</a>
       </div>
     </div>
-    <button class="btn btn-primary" type="submit" [routerLink]="['/genrepick']">Sign In</button>
+    <!-- <button  class="btn btn-primary" type="submit" [routerLink]="['/genrepick']">Sign In</button> -->
+    <button [disabled]="Registerform.form.invalid"  class="btn btn-primary" type="submit">Sign In</button>
   </form>
 </div>

@@ -17,14 +17,18 @@ const routes: Routes = [
   {path: 'login' , component: LoginComponent},
   {path: 'signin' , component: SigninComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'library', component: LibraryComponent},
+  {path: 'library', component: LibraryComponent}, //
   {path: 'shop', component: ShopComponent},
   {path: 'account', component: AccountComponent},
   {path: 'genrepick', component: GenrepickComponent},
   {path: 'profile', component:ProfileComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'addbooks', component: AddbooksComponent},
-  {path: 'bookinfo', component: BookinfoComponent}
+  {path: 'bookinfo', component: BookinfoComponent},
+
+
+
+
 ];
 
 
