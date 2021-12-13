@@ -19,6 +19,7 @@ import { BookinfoComponent } from './components/bookinfo/bookinfo.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     AddbooksComponent,
     BookinfoComponent,
-    FooterComponent
+    FooterComponent,
+    LoginAdminComponent
   ],
   imports: [
     BrowserModule,

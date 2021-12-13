@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AddbooksComponent } from './components/addbooks/addbooks.component';
 import { BookinfoComponent } from './components/bookinfo/bookinfo.component';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'addbooks', component: AddbooksComponent},
   {path: 'bookinfo', component: BookinfoComponent},
+  {path: 'login-admin', component: LoginAdminComponent}
 
 
 
