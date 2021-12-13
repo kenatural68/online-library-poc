@@ -1,5 +1,5 @@
 <div class="container">
-    <form>
+    <form name="AddDetailsForm">
       
            <div class="form-group">
             <label for="uploadPdf">Upload PDF</label>
@@ -15,17 +15,24 @@
         </div> -->
         <div class="form-group">
           <label for="bookname">Title</label>
-          <input type="text" class="form-control" placeholder="Book title"  >
+          <input type="text" class="form-control" placeholder="Book title" name="title" [(ngModel)]="this.title" >
         </div>
+
+
         <div class="form-group">
           <label for="bookauthor">Author</label>
-          <input type="text" class="form-control"  placeholder="Author"  >
+          <input type="text" class="form-control"  placeholder="Author"name="author" [(ngModel)]="this.author">
 
 
-          <input type="text" class="form-control"  placeholder="genre"  >
+          <input type="text" class="form-control"  placeholder="genre"  name="genre" [(ngModel)]="this.genre">
 
 
         </div>
+
+
+        
+
+        
         <label for="genre">Genre</label>
         <select class="form-control">
             <option>--select--</option>
@@ -43,5 +50,5 @@
       </form>
 
 
-    <button class="btn btn-primary" type="submit" (click)="onUpload()">Add Book</button>
+    <button class="btn btn-primary" type="submit" (click)="onUpload(AddDetailsForm)">Add Book</button>
 </div>
