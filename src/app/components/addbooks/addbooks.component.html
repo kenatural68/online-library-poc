@@ -1,16 +1,30 @@
 <div class="container">
     <form>
-        <div class="form-group">
+      
+           <div class="form-group">
             <label for="uploadPdf">Upload PDF</label>
-            <input type="file" class="form-control-file" id="uploadPdf">
+            <input type="file" class="form-control-file" (change)="onFileChanged($event)">
           </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="bookname">Title</label>
           <input type="text" class="form-control" id="bookname" placeholder="Book title">
         </div>
         <div class="form-group">
           <label for="bookauthor">Author</label>
           <input type="text" class="form-control" id="bookauthor" placeholder="Author">
+        </div> -->
+        <div class="form-group">
+          <label for="bookname">Title</label>
+          <input type="text" class="form-control" placeholder="Book title"  >
+        </div>
+        <div class="form-group">
+          <label for="bookauthor">Author</label>
+          <input type="text" class="form-control"  placeholder="Author"  >
+
+
+          <input type="text" class="form-control"  placeholder="genre"  >
+
+
         </div>
         <label for="genre">Genre</label>
         <select class="form-control">
@@ -27,7 +41,7 @@
             <textarea class="form-control" id="bookdescription" rows="3"></textarea>
           </div>
       </form>
-      <a role="button" class="btn btn-primary" [routerLink]="['/admin']" (click)="onClick()">
-        Add Book
-    </a>
+
+
+    <button class="btn btn-primary" type="submit" (click)="onUpload()">Add Book</button>
 </div>
