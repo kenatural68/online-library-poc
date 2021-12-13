@@ -13,7 +13,8 @@
       <input type="password" class="form-control"  placeholder="Password" name="password" [(ngModel)]="user.password" required>
     </div>
     <!-- <button type="submit" class="btn btn-primary" [routerLink]="['/library']">Login</button> -->
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-primary">Login</button>&nbsp;
+    <button type="submit" class="btn btn-secondary" [routerLink]="['/login-admin']">Admin Login</button>
   </form>
 
   <small class="float-right" [routerLink]="['/signin']">new user> register here</small>
