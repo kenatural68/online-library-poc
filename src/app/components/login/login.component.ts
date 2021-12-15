@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 this._service.loginUserFromRemote(this.user).subscribe(
   data => {
     console.log("response recieved")
-    this._router.navigate(['/library'])
+    this._router.navigate(['/shop'])
   },
 
   error => {

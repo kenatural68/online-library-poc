@@ -16,7 +16,7 @@ showall:any
   }
 
   allbooks(){
-    return this._http.get("http://localhost:8080/list").subscribe((result)=>{
+    return this._http.get("http://localhost:8080/onlinelibrary/list").subscribe((result)=>{
       this.showall=result;
       console.log(this.showall=result);
     }
